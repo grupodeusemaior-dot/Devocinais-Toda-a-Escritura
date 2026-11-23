@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101e3c">
+<meta name="description" content="565 reflexões bíblicas para compreender a história da redenção. Renova-me Deus Meu.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Toda a Escritura">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icons/icon-192.png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<link rel="stylesheet" href="./style.css">
+<title>Devocinais Toda a Escritura</title>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-cover" aria-hidden="true"></div>
+  <div class="hero-content">
+    <img class="app-logo" src="./icons/icon-192.png" alt="Logo Devocinais Toda a Escritura">
+    <p class="brand">RENOVA-ME DEUS MEU</p>
+    <h1>Devocinais<br><span>Toda a Escritura</span></h1>
+    <p class="subtitle">565 reflexões para compreender<br>a história da redenção</p>
+    <button id="installBtn" class="install-btn" hidden>＋ Instalar aplicativo</button>
+  </div>
+</header>
+
+<main>
+  <section id="homeView">
+    <div class="intro">
+      <span class="eyebrow">UMA CAMINHADA PELA PALAVRA</span>
+      <h2>Uma única história:<br><em>a história da redenção.</em></h2>
+      <p>Explore as reflexões do Novo e do Antigo Testamento. Leia, medite e permita que a Palavra alcance sua vida cotidiana.</p>
+    </div>
+
+    <div class="stats"><div><strong>565</strong><span>reflexões</span></div><div><strong>2</strong><span>Testamentos</span></div><div><strong>1</strong><span>história redentora</span></div></div>
+
+    <div class="toolbar">
+      <label class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar título ou referência…" autocomplete="off"></label>
+      <div class="filters" role="group" aria-label="Filtrar testamento">
+        <button class="filter active" data-filter="Todos">Todos</button>
+        <button class="filter" data-filter="Novo Testamento">Novo Testamento</button>
+        <button class="filter" data-filter="Antigo Testamento">Antigo Testamento</button>
+      </div>
+    </div>
+    <div class="list-heading"><h2>Suas leituras</h2><span id="countLabel">Carregando…</span></div>
+    <div id="chapterList" class="chapter-list" aria-live="polite"></div>
+  </section>
+
+  <section id="readerView" hidden>
+    <button id="backBtn" class="back">← Todas as reflexões</button>
+    <article class="reading">
+      <div class="reading-top"><span id="testamentLabel" class="tag"></span><span id="numberLabel" class="number"></span></div>
+      <h2 id="chapterTitle"></h2>
+      <p id="chapterReference" class="reference"></p>
+      <div class="font-tools" aria-label="Ajustar tamanho do texto">
+        <span>Tamanho da leitura</span>
+        <button id="fontDown" aria-label="Diminuir tamanho">A−</button>
+        <button id="fontUp" aria-label="Aumentar tamanho">A+</button>
+      </div>
+      <div id="chapterText" class="devotional-text"></div>
+      <nav class="reader-nav" aria-label="Navegar pelas reflexões">
+        <button id="prevBtn">← Anterior</button><button id="nextBtn">Próxima →</button>
+      </nav>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p class="footer-brand">RENOVA-ME DEUS MEU</p>
+  <p>Uma mensagem para fortalecer sua caminhada com Deus.</p>
+  <details class="credits"><summary>Créditos</summary><p>Rosilene Maria da Silva Oliveria e Ricardo Augusto de Oliveira, criadores do Google Site Renova-me Deus Meu</p></details>
+  <a class="site-button" href="https://sites.google.com/view/grupo-deus-e-maior/p%C3%A1gina-inicial?authuser=0&amp;pli=1" target="_blank" rel="noopener noreferrer">Site Renova-me Deus Meu ↗</a>
+  <p class="install-note">Para instalar no iPhone: abra no Safari, toque em Compartilhar e escolha “Adicionar à Tela de Início”.</p>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>
